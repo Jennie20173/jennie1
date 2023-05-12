@@ -1,2 +1,72 @@
 <!DOCTYPE html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+   
+   <style>
+    body{
+        margin: 0px;
+        width: 100%;
+        height: 100px ;
+    }
+    h1{
+        color:aliceblue
+    }
+    .local{
+        background-color: coral;
+    }
+   .mauchu{
+    color: cornflowerblue;
+     
+     font-size: 20px;
+   }
+   .maucam{
+    color: chocolate;
+   }
+   </style>
+</head>
+<body>
+   <div class="you"> 
+       <div class="local">
+        <h1> Sở thích  của bạn</h1>
+       </div>
+       <div>
+        <form action="" method="get"> 
+          <div class="input-container"> 
+            <label for="yourname" class="mauchu">Họ và tên:</label>
+            <input type="text"  id="yourname" value="" name="yourname" >
+             <div class="bar"></div>
+        </div >  
+            <div class="input-container">
+           <label for="Email" class="mauchu">Email:  </label>
+           <input type="text" id="email" value="" name="email" >
+           <div class="bar"></div>
+        </div>
+            <div>
+                <label for="interest " class="mauchu">Sở thích:</label>
+                <input  type="checkbox" name="thể thao" id="thể thao" >
+                <label class="maucam" for="thể thao ">thể thao</label>
+                <input  type="checkbox" name="âm nhạc" id="âm nhạc" >
+                <label  class="maucam" for="âm nhạc">Âm nhạc</label>
+                <input type="checkbox" name="đọc sách"   id="đọc sách">
+                <label class="maucam"  for="đọc sách">Đọc sách</label>
+                <input type="checkbox"name="lướt web"  id="lướt web">
+                <label  class="maucam" for="lướt web"> Lướt web</label>
+                <input type="checkbox" name="chơi game" id="chơi agme"> 
+                <label  class="maucam" for="chơi game"> chơi game</label>
+                <input type="checkbox" name="điện ảnh" id="điện ảnh">
+                <label  class="maucam"for="điện ảnh"> điện ảnh</label>
+         </div>
+         <div>
+            <button type="submit" name="submit" value="Gửi thông tin">Gửi thông tin</button>
+            <button type="reset" name="reset" value="nhập lại"> Nhập lại </button>
+        </div>
+         
+        </form>
+       </div>
+   </div>
+</body>
+</html>
