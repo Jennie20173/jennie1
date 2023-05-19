@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+   <style>
+    .one{
+        height:20px ;
+        color:green;
+        text-transform: capitalize;
+        cursor: pointer;
+        border-radius: 10px ;
+        border: 1px solid rgb(82, 245, 17);
+        }
+      .one:hover{
+       background-color: green;
+        color: white;
+      }  
+      .two{
+        height: 20px;
+        color: cornflowerblue;
+        text-transform: capitalize;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 1px solid cornflowerblue;
+      }
+      .two:hover{
+        background-color: cornflowerblue;
+        color:white;
+      }
+      /* .three{
+        height: 20px;
+        color:white;
+        background-color: coral;
+        cursor: pointer;
+         border: 1px solid coral; 
+      }  */
+      /* .three:hover{
+        background-color: rgb(223, 89, 40);
+      } */
+    
+      .four{
+        color:white;
+        background: #0d8bf2;
+        border: 0;
+       display: block;
+    }
+    .dropdown{
+        display: inline-block;
+    }
+    .dropdown-content{
+       
+    }
+  </style> 
+</head>
+<body>
+    <button class="button one">succcess <i class="fa fa-cart-arrow-down"></i></button>
+    <button class="button two">info <i class="fas fa-sync-alt fa-spin"></i></button>
+    <!-- <button class="button three">warning <i class="fab fa-twitter"></i></button> -->
+    <button class="button four">Button</button>
+    <div class="dropdown">
+      <button class="button four" style="border-left:1px solid #0d8bf2">
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

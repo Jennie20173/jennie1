@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     nhập a:<input type="text" id="number-a">
+     nhập b:<input type="text" id="number-b">
+     nhập c: <input type="text" id="number-c">
+     <input type="button" onclick="studynumber()" value='kết quả'>
+</html>
+<script>
+   
+
+   function studynumber() {
+    let number_a = parseInt(document.getElementById('number-a').value);
+    let number_b =  parseInt(document.getElementById('number-b').value);
+    let number_c =  parseInt(document.getElementById('number-c').value);
+    let x1=0;
+    let x2=0;
+    let delta = number_b**2 - (4 * number_a * number_c);
+    console.log(delta);
+    if ( delta > 0) {
+        x1 = (-number_b + Math.sqrt(delta)) / (2 * number_a);
+        x2 = (-number_b - Math.sqrt(delta)) / (2 * number_a);
+       console.log(x1 , x2);
+    } else if (delta = 0) {
+        x1 = x2 = -(number_b / (2*number_a));
+        console.log(x1 , x2);
+    }  else {
+       
+       console.log('phương trình vô nghiệm');
+
+    }
+          
+   }
+</script>

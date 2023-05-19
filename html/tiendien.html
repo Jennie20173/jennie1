@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .block{
+        width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <label for="electricity">nhập vào số kWH điện</label>
+    <input type="text" id="electricity">
+    <br>
+    <label for="price">giá  bán điện</label>
+    <input type="text" id="price" style="margin-left: 68px;">
+    <br><input type="button" onclick="styleif()" value="result">
+    </div>
+    <!-- <input type="button" onclick="styleifelse()" value="result"> -->
+</body>
+</html>
+<script>
+    function styleif() {
+        let electricity = parseInt(document.getElementById('electricity').value)
+        let huns = 0;
+        if (electricity > 0 && electricity <= 50) {
+           huns = 1.728;
+        //   alert(huns);
+            document.getElementById('price').value= huns + 'VND';
+        } else if (electricity <= 100) {
+            huns = 1.786;
+            document.getElementById('price').value= huns + 'VND';
+        } else if ( electricity <= 200) {
+            huns = 2.074;
+            document.getElementById('price').value= huns + 'VND';
+        }else if ( electricity <= 300) {
+            huns = 2.612;
+            document.getElementById('price').value= huns + 'VND';
+        }else if( electricity <=400) {
+            huns = 2.919
+            document.getElementById('price').value= huns + 'VND';
+        }
+   }    
+</script>

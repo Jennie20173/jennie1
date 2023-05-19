@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dollar</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="amount">amount</label> <br>
+        <input type="text" id="amount">
+        <label for="fromcurrency">from curency</label>
+        <select name="" id="fromcurrency">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+        </select>
+        <label for="tocurrency">to curency</label>
+        <select name="" id="tocurrency">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option>
+
+        </select>
+        <button onclick="convert()" type="button">convert</button>
+          <div id="ketqua"></div>
+    </form>
+</body>
+
+</html>
+<script>
+    //   var selcetor = document.getElementById('fromcurrency');
+    //   selector.addEventListener('change',changeFunction);
+    //   function changeFunction(){
+    //     var selector1 = document.getElementById(fromcurrency);
+    //   }
+
+  function convert() {
+        var amount = parseInt(document.getElementById('amount').value);
+        var fromcurrency = document.getElementById('fromcurrency').value;
+        var tocurrency = document.getElementById('tocurrency').value;
+        var change;
+
+        if (fromcurrency === tocurrency) {
+            //  document.getElementById('ketqua').innerText ='kết quả' + amount;
+         console.log('ket qua:' + amount);
+
+        }else if (fromcurrency == 'USD' && tocurrency == 'VND') {
+           change = amount * 23000 ;
+        //   document.getElementById('ketqua').innerText =  'kết quả' +change;
+        console.log('ket qua:' + change);
+
+        } else if (fromcurrency == 'VND' && tocurrency == 'USD' ) {
+            change = amount / 23000;
+            // document.getElementById('ketqua').innerText = 'kết quả' + change;
+            console.log('ket qua:' + change);
+        }
+        
+
+    }
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+
+<body>
+    <div>
+        <input type="number" id="small" placeholder="nhập số thứ nhất">
+        <input type="number" id="big" placeholder="nhập số thứ hai">
+        <button onclick="onesomething(small,big)">cộng</button>
+        <button onclick="twosomething(small,big)">trừ</button>
+        <br>
+        <p>kết quả là: <span id="ketqua"></span></p>
+    </div>
+    <script>
+        //     var onesomething = document.getElementById("onesomething");
+        //     onesomething.addEventListener("click",clickFunction);
+        //    function clickFunction() {
+        //     alert("xinchao");
+        //    }
+        function onesomething(small, big) {
+            var a = parseInt(document.getElementById('small').value);
+            var b = parseInt(document.getElementById('big').value);
+            var c = a + b;
+            // alert(c);
+            document.getElementById('ketqua').innerText = c;
+            
+        }
+        function twosomething(small, big) {
+            var a = parseInt(document.getElementById('small').value);
+            var b = parseInt(document.getElementById('big').value);
+            var d = a - b;
+            // alert(c);
+            document.getElementById('ketqua').innerText = d;
+            
+        }
+        
+    </script>
+
+
+</body>
+
+</html>
