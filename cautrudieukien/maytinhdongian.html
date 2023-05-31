@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>máy-tính</title>
+    <style>
+        button{
+            width: 40px;
+            border: 1px ;
+        }
+        input{
+           border: 5px solid rgb(163, 171, 190);
+          width: 163px;
+          
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="number-one" placeholder="nhập vào để tính toán">
+    <table border="1" cellspacing="0">
+        <tbody>
+            <tr>
+               <td> <button type="button"  name="nut" value="1"  onclick="inputValue(this.value)"> 1</button></td>
+                <td> <button type="button"  name="nut" value="2"   onclick="inputValue(this.value)">2</button></td>
+                <td> <button type="button" name="nut" value="3"  onclick="inputValue(this.value)">3</button></td>
+                <td> <button type="button"  name="tinh" value="+"  onclick="inputValue(this.value)" >+</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" name="nut" value="4"  onclick="inputValue(this.value)">4</button></td>
+                <td><button type="button"  name="nut" value="5"  onclick="inputValue(this.value)">5</button></td>
+                <td><button type="button" value="6" name="nut" onclick="inputValue(this.value)">6</button></td>
+                <td><button type="button" name="tinh" value="-"  onclick="inputValue(this.value)">-</button></td>
+         </tr>
+         <tr> 
+            <td><button type="button"  name="nut" value="7"  onclick="inputValue(this.value)">7</button></td>
+            <td><button type="button" name="nut" value="8"  onclick="inputValue(this.value)">8</button></td>
+            <td><button type="button" name="nut" value="9"  onclick="inputValue(this.value)">9</button></td>
+            <td><button type="button"  name="tinh" value="*"   onclick="inputValue(this.value)">*</button></td>
+         </tr>
+         <tr>
+            <td><button type="button"  onclick="cancell();">AC</button></td>
+            <td><button type="button"  name="nut" value="0"  onclick="inputValue(this.value)">0</button></td>
+            <td><button  name= "resultt" onclick="resultt()"> = </button></td>
+            <td><button type="button" name="tinh"  value="/" onclick="inputValue(this.value)">/</button></td>
+
+         </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
+<script>
+let number_one = document.getElementById('number-one');
+console.log(number_one);
+ function inputValue(value) {
+    number_one.value += value;
+ }
+ function resultt() {
+    let result = eval(number_one.value);
+    number_one = result;
+    //  console.log(number_one);
+
+ }
+ function cancell() {
+    number_one.value= '';
+ }
+</script>

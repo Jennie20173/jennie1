@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>năm-nhuận</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var  year = parseInt( prompt('nhập vào 1 số là năm :'));
+    if ( (year % 4 == 0) && ( year % 100 != 0) ) {
+         alert('năm này là năm nhuận');
+        // console.log('năm nhuận');
+    }
+    if  (year % 100 == 0)  {
+        if (year % 400 != 0) {
+            alert( year + ' không phải năm nhuận');
+            // console.log('năm không nhuận');
+         }   else {
+         alert(year +  ' là năm nhuận');
+        //  console.log('năm nhuận');
+    } } else {
+        //  console.log('năm không nhuận');
+        alert('không  phải năm nhuận');
+    }
+
+    
+
+        
+
+    
+</script>
