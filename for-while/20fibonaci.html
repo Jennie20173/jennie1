@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let n1 = 1, n2 = 1, nextTerm;
+     let sum = 0;
+document.write('Fibonacci Series:' + '<br>');
+
+for (let i = 1; i <= 20; i++) {
+     sum=sum+n1;
+    //  if (n1 % 5== 0) {
+    //     document.write('số đầu tiên chia hết cho 5:' + n1);
+    //     break;
+    // }
+    document.write(n1 +'<br>');
+    // console.log(n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+}
+    
+ document.write('tổng 20fibonaci đầu tiên :' + sum);
+</script>
